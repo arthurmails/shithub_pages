@@ -21,3 +21,14 @@ h1 {
 .about h2 {
     margin-top: 0;
 }
+
+.privacy {
+    background-color: #e8f0fe;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.privacy h2 {
+    margin-top: 0;
+}
