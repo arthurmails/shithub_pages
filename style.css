@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding-top: 80px;
     line-height: 1.6;
+    background-color: #0f0f0f;
+    color: #e0e0e0;
 }
 
 .page-content {
@@ -12,7 +14,7 @@ body {
 }
 
 .about {
-    background-color: #f7f7f7;
+    background-color: #1f1f1f;
     padding: 20px;
     border-radius: 8px;
     margin-top: 30px;
@@ -20,10 +22,11 @@ body {
 
 .about h2 {
     margin-top: 0;
+    color: #f0f0f0;
 }
 
 .privacy {
-    background-color: #e8f0fe;
+    background-color: #1a2332;
     padding: 20px;
     border-radius: 8px;
     margin-top: 30px;
@@ -31,32 +34,27 @@ body {
 
 .privacy h2 {
     margin-top: 0;
+    color: #f0f0f0;
 }
-
 
 .small-centered {
     text-align: center;
     margin-left: auto;
     margin-top: 0;
     font-size: 50%;
+    color: #b0b0b0;
 }
 
-
-
-
-/*TOP TEXT TOP TEXT TOP TEXT TOP TEXT TOP TEXT*/
 /* Reset basics */
-
 h1 {
     text-align: center;
-    color: #333;
+    color: #e0e0e0;
 }
 
 .site-header h1 {
     text-align: left;
     color: #87ceeb;
 }
-
 
 * {
     box-sizing: border-box;
@@ -65,7 +63,7 @@ h1 {
 }
 
 body {
-    padding-top: 80px; /* prevent content from hiding behind fixed header */
+    padding-top: 80px;
     font-family: system-ui, sans-serif;
 }
 
@@ -75,8 +73,8 @@ body {
     top: 0;
     width: 100%;
     height: 80px;
-    background: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background: #1a1a1a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
     transition: height 0.3s ease, padding 0.3s ease;
     z-index: 1000;
 }
@@ -93,14 +91,12 @@ body {
     align-items: center;
 }
 
-
 /* LOGO */
 .logo {
     position: absolute;
     left: 24px;
-
     display: block;
-    padding: 8px 12px; /* clickable area */
+    padding: 8px 12px;
     text-decoration: none;
 }
 
@@ -112,10 +108,9 @@ body {
 }
 
 .logo:hover {
-    background-color: rgba(135, 206, 235, 0.1);
+    background-color: rgba(135, 206, 235, 0.2);
     border-radius: 20px;
 }
-
 
 /* NAVIGATION */
 .nav {
@@ -132,14 +127,14 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #222;
+    color: #e0e0e0;
     font-weight: 500;
     padding: 20px;
 }
 
 .nav-links a:hover {
     color: #87ceeb;
-    background-color: rgba(135, 206, 235, 0.1);
+    background-color: rgba(135, 206, 235, 0.15);
     border-radius: 30px;
 }
 
@@ -149,23 +144,19 @@ body {
     right: 24px;
     width: 28px;
     height: 22px;
-
     display: none;
-
     flex-direction: column;
     justify-content: space-between;
-
     background: none;
     border: none;
     cursor: pointer;
     padding: 0;
 }
 
-
 .hamburger span {
     height: 3px;
     width: 100%;
-    background-color: #222;
+    background-color: #e0e0e0;
     border-radius: 2px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -182,8 +173,6 @@ body {
     transform: translateY(-9.5px) rotate(-45deg);
 }
 
-
-
 /* MOBILE */
 @media (max-width: 900px) {
     .nav {
@@ -191,9 +180,9 @@ body {
         top: 80px;
         left: 0;
         width: 100%;
-        background: white;
+        background: #1a1a1a;
         display: none;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     }
 
     .site-header.shrink .nav {
@@ -216,14 +205,11 @@ body {
     }
 }
 
-
 /* ACCESS BOX */
-
 .page-content {
     max-width: 600px;
     margin: 40px auto;
     padding: 0 20px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -233,6 +219,7 @@ body {
 .intro-text {
     margin-bottom: 50px;
     font-size: 23px;
+    color: #e0e0e0;
 }
 
 .access-wrapper {
@@ -242,38 +229,34 @@ body {
     margin-top: 25%;
 }
 
-
 .access-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 18px;
-
     padding: 40px 50px;
     border-radius: 14px;
-
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    background: rgba(30, 30, 30, 0.95);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 .access-input {
     width: 360px;
     max-width: 90vw;
-
     padding: 16px 18px;
     font-size: 1.05rem;
     letter-spacing: 0.08em;
-
-    border: 1px solid #ccc;
+    border: 1px solid #404040;
     border-radius: 10px;
     outline: none;
-
+    background-color: #252525;
+    color: #e0e0e0;
     text-align: center;
     transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .access-input::placeholder {
-    color: #999;
+    color: #808080;
     letter-spacing: 0.12em;
 }
 
@@ -285,16 +268,13 @@ body {
 .access-submit {
     width: 180px;
     padding: 12px 0;
-
     font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 0.15em;
-
     color: #fff;
-    background-color: #222;
+    background-color: #333;
     border: none;
     border-radius: 999px;
-
     cursor: pointer;
     transition: background-color 0.25s ease, transform 0.1s ease;
 }
@@ -310,8 +290,7 @@ body {
 
 .fade-right-js {
     display: inline-block;
-    --fade-progress: 0; /* 0 = fully visible, 1 = fully faded from the right */
-
+    --fade-progress: 0;
     -webkit-mask-image: linear-gradient(
             to right,
             black 0%,
@@ -324,20 +303,17 @@ body {
             black calc(100% * (1 - var(--fade-progress))),
             transparent 100%
     );
-
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
 }
 
-/* -----------------------
-   LANGUAGE DROPDOWN
------------------------ */
+/* LANGUAGE DROPDOWN */
 .language-dropdown {
     position: relative;
     display: inline-block;
-    margin-left: auto; /* aligns to the right in header */
+    margin-left: auto;
 }
 
 .language-btn {
@@ -363,10 +339,10 @@ body {
     position: absolute;
     top: 100%;
     right: 0;
-    background: #fff;
-    border: 1px solid #ccc;
+    background: #2a2a2a;
+    border: 1px solid #404040;
     border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
     min-width: 140px;
     opacity: 0;
     visibility: hidden;
@@ -386,21 +362,21 @@ body {
     align-items: center;
     gap: 8px;
     padding: 10px 16px;
-    color: #333;
+    color: #e0e0e0;
     font-size: 14px;
     text-decoration: none;
 }
 
 .language-option:hover {
-    background: #f5f5f5;
+    background: #404040;
 }
 
 /* FLAG ICONS */
 .flag-icon {
-    width: 24px;        /* width of flag */
-    height: 16px;       /* height of flag */
-    object-fit: cover;  /* keeps image ratio */
-    border-radius: 2px; /* optional, slight rounding */
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 2px;
     vertical-align: middle;
 }
 

@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding-top: 80px;
     line-height: 1.6;
+    background-color: #0f0f0f;
+    color: #e0e0e0;
 }
 
 .page-content {
@@ -12,7 +14,7 @@ body {
 }
 
 .about {
-    background-color: #f7f7f7;
+    background-color: #1f1f1f;
     padding: 20px;
     border-radius: 8px;
     margin-top: 30px;
@@ -20,10 +22,11 @@ body {
 
 .about h2 {
     margin-top: 0;
+    color: #f0f0f0;
 }
 
 .privacy {
-    background-color: #e8f0fe;
+    background-color: #1a2332;
     padding: 20px;
     border-radius: 8px;
     margin-top: 30px;
@@ -31,32 +34,27 @@ body {
 
 .privacy h2 {
     margin-top: 0;
+    color: #f0f0f0;
 }
-
 
 .small-centered {
     text-align: center;
     margin-left: auto;
     margin-top: 0;
     font-size: 50%;
+    color: #b0b0b0;
 }
 
-
-
-
-/*TOP TEXT TOP TEXT TOP TEXT TOP TEXT TOP TEXT*/
 /* Reset basics */
-
 h1 {
     text-align: center;
-    color: #333;
+    color: #e0e0e0;
 }
 
 .site-header h1 {
     text-align: left;
     color: #87ceeb;
 }
-
 
 * {
     box-sizing: border-box;
@@ -65,7 +63,7 @@ h1 {
 }
 
 body {
-    padding-top: 80px; /* prevent content from hiding behind fixed header */
+    padding-top: 80px;
     font-family: system-ui, sans-serif;
 }
 
@@ -75,8 +73,7 @@ body {
     top: 0;
     width: 100%;
     height: 80px;
-    background: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background: #1a1a1a;
     transition: height 0.3s ease, padding 0.3s ease;
     z-index: 1000;
 }
@@ -93,14 +90,12 @@ body {
     align-items: center;
 }
 
-
 /* LOGO */
 .logo {
     position: absolute;
     left: 24px;
-
     display: block;
-    padding: 8px 12px; /* clickable area */
+    padding: 8px 12px;
     text-decoration: none;
 }
 
@@ -112,10 +107,9 @@ body {
 }
 
 .logo:hover {
-    background-color: rgba(135, 206, 235, 0.1);
+    background-color: rgba(135, 206, 235, 0.2);
     border-radius: 20px;
 }
-
 
 /* NAVIGATION */
 .nav {
@@ -132,14 +126,14 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #222;
+    color: #e0e0e0;
     font-weight: 500;
     padding: 20px;
 }
 
 .nav-links a:hover {
     color: #87ceeb;
-    background-color: rgba(135, 206, 235, 0.1);
+    background-color: rgba(135, 206, 235, 0.15);
     border-radius: 30px;
 }
 
@@ -149,23 +143,19 @@ body {
     right: 24px;
     width: 28px;
     height: 22px;
-
     display: none;
-
     flex-direction: column;
     justify-content: space-between;
-
     background: none;
     border: none;
     cursor: pointer;
     padding: 0;
 }
 
-
 .hamburger span {
     height: 3px;
     width: 100%;
-    background-color: #222;
+    background-color: #e0e0e0;
     border-radius: 2px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -182,8 +172,6 @@ body {
     transform: translateY(-9.5px) rotate(-45deg);
 }
 
-
-
 /* MOBILE */
 @media (max-width: 900px) {
     .nav {
@@ -191,9 +179,8 @@ body {
         top: 80px;
         left: 0;
         width: 100%;
-        background: white;
+        background: #1a1a1a;
         display: none;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     }
 
     .site-header.shrink .nav {
@@ -214,4 +201,79 @@ body {
     .hamburger {
         display: flex;
     }
+}
+
+/* LANGUAGE DROPDOWN */
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.language-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.language-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Dropdown menu */
+.language-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #2a2a2a;
+    border: 1px solid #404040;
+    border-radius: 4px;
+    min-width: 140px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+    z-index: 1000;
+}
+
+.language-dropdown:hover .language-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    color: #e0e0e0;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.language-option:hover {
+    background: #404040;
+}
+
+/* FLAG ICONS */
+.flag-icon {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+/* LANGUAGE CODE TEXT */
+.lang-code {
+    font-weight: 500;
 }
