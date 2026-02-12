@@ -9,24 +9,54 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<h1>arthurmails.com</h1>
+		<header class="site-header">
+			<div class="header-inner">
+				<a href="index.html" class="logo">
+					<h1>arthurmails.com</h1>
+				</a>
+				
+				<nav class="nav">
+					<ul class="nav-links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="pages/About.html">About</a></li>
+						<li><a href="pages/Privacy_Compliance.html">Privacy & Compliance</a></li>
+					</ul>
+				</nav>
+				
+				<button class="hamburger" aria-label="Menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+
+			</div>
+		</header>
 		
-		<p>This domain is used for email services.</p>
-		<p>While development is underway, we will add a more complex website later.</p>
+		<main class="page-content">
+			
+			<div class="intro-text">
+				<p>Welcome to my domain.</p>
+				<p>While development is underway, we will add a more complex website later.</p>
+				<p class="fade-right-js" id="fade-text">
+					Or it might already be there, who knows...
+				</p>
+			</div>
+			
+			<div class="access-wrapper">
+				<div class="access-box">
+					<input
+							id="code"
+							type="text"
+							class="access-input"
+							placeholder="Enter access code"
+							autocomplete="off"
+					>
+					<button class="access-submit" onclick="submitCode()">SUBMIT</button>
+				</div>
+			</div>
 		
-		<div class="about">
-			<h2>About Us</h2>
-			<p><strong>Business Name:</strong> ArthurMails</p>
-			<p><strong>Owner: </strong>Arthur H.</p>
-			<p><strong>Email:</strong> inquire@arthurmails.com</p>
-			<p><strong>Purpose:</strong> Facilitate e-mails and services the easy way.</p>
-		</div>
-		
-		<div class="privacy">
-			<h2>Privacy & Compliance</h2>
-			<p>We respect our recipients’ privacy and comply with all applicable anti-spam laws.</p>
-			<p>All emails sent from this domain are strictly transactional or informational for opt-in customers only.</p>
-			<p>If you wish to contact us regarding email compliance or privacy concerns, please reach out at <strong>legal@arthurmails.com</strong>.</p>
-		</div>
+		</main>
+
+		<script src="script.js"></script>
 	</body>
 </html>
